@@ -1,0 +1,246 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:#444;
+  color: #fff;
+}
+  .hero {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:#333;
+    justify-content: flex-start;
+  }
+  .hero-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #242424;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    gap: 1rem;
+  }
+  #difficulty{
+    width: 10rem;
+  }
+  #difficulty:hover{
+    background: crimson;
+    color:#fff;
+  } 
+  .hero-main {
+    position: relative;
+    z-index: 3;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    padding: 2rem;
+    background-color: #444;
+    border-radius:5px;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, .5);
+  }
+  .name{
+    color: #fff;
+    background-color: #009b79;
+    text-align: center;
+    padding: 1rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+  select {
+    display: block;
+    appearance: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+  .time-score{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+  }
+  .time-score p{
+    font-weight: 600;
+  }
+  .hero-main-content{
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .over{
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  .flag-img{
+      transform: translateY(-2.7rem);
+      display: block;
+      margin: auto;
+  }.order{
+      display: block;
+      text-align: center;
+      transform: translateY(-2rem);
+  }
+  .btn-box{
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+      gap: 1rem;
+  }
+  .time-score{
+    font-size: 1.3rem;
+  }
+  .btn-seagreen.green{
+    background: #03cc0a;
+  }
+  .btn-seagreen.red{
+    background: red;
+  }
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 35vw;
+    transform: translate(-50%, -50%);
+    z-index: 6;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .modal-container {
+    background: #f8f8f2;
+    display: flex;
+    flex-direction: column;
+  }
+  .modal-header {
+    background: #0a775f;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 2rem;
+  }
+  .modal-body {
+    padding: 0 20px;
+    margin: 20px 0;
+  }
+  .modal-body p {
+    line-height: 1.5;
+    font-weight: 500;
+    color: #000;
+  }
+  .modal-body p span {
+    color: #0a775f;
+  }
+  .modal-body .small {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #333;
+    opacity: 0.8;
+  }
+  .modal-footer {
+    padding: 20px;
+    padding-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+  }
+  .result{
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  .btn{
+    padding: 12px 25px;
+    font-size: 13px;
+    border: 0;
+    border-radius: 0px;
+    outline: 0;
+    cursor: pointer;
+    margin: 0 1.5rem;  
+  }
+  .btna{
+    padding: 12px 25px;
+    font-size: 13px;
+    border: 0;
+    border-radius: 0px;
+    outline: 0;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+  }
+  .btn-seagreen {
+    background: #0a775f;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  .hidden {
+    display: none;
+  }
+  .btn:active{
+      transform: translateY(3px);
+  }
+@media(max-width:1000px){
+    .flag-img{
+        margin-top: 7.5rem;
+    }
+    .modal{
+        width: 60vw;
+    }
+    .modal-container>div{
+        margin-bottom: 1rem;
+    }
+}
+@media(max-width:500px){
+    .hero-header{
+        padding: .7rem 1rem;
+        gap: .5rem;
+    }
+    .hero-main{
+        width: 92%;
+        height: 87.5%;
+        padding: 1rem;
+    }
+    .name{
+        font-size: 1.8rem;
+        padding: .7rem;
+    }
+    .time-score{
+        margin: .7rem 0;
+    }
+    .flag-img{
+        transform:unset;
+        margin: .5rem auto;
+        width: 250px;
+        height: 150px;
+    }
+    .order{
+        transform: unset;
+        margin-bottom: .5rem;
+    }
+    .modal{
+        width: 75vw;
+    }
+}

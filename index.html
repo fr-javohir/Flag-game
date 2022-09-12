@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flag</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <div class="hero-header">
+        <h3>Select Difficulty</h3>
+        <select name="level" id="difficulty">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+      </div>
+      <div class="hero-main">
+        <div class="hero-main-content">
+          <h2 class="name">Flag Game</h2>
+          <div class="time-score">
+            <p>Time left : <span class="time">15</span>s</p>
+            <p>Score: <span class="counter">0</span></p>
+          </div>
+          <img src="undraw_loading_re_5axr.svg" width="300" height="200" class="flag-img" />
+          <span class="order">Find the country of this flag</span>
+          <div class="btn-box">
+            <button class="btn btn-seagreen">Country1</button>
+            <button class="btn btn-seagreen">Country2</button>
+            <button class="btn btn-seagreen">Country3</button>
+            <button class="btn btn-seagreen">Country4</button>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+      <div class="modal hidden">
+        <div class="modal-container">
+          <div class="modal-header">
+            <h2 class="over">The Game is over</h2>
+          </div>
+          <div class="modal-body">
+            <p class="result">
+              Your score is <span class="modal-score"></span>
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button class="btna btn-seagreen" id="modal-btn">Play Again</button>
+          </div>
+        </div>
+      </div>
+      <div class="overlay hidden"></div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
